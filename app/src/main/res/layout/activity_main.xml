@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/disc"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:outlineAmbientShadowColor="@color/white"
+        android:src="@drawable/dieukhacla"></de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Tên bài hát"
+        android:textColor="#fff"
+        android:textSize="24sp"></TextView>
+    <TextView
+        android:id="@+id/textViewArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nghệ sĩ"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="18dp">
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/imgButtonPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="136dp"
+        android:layout_marginBottom="46dp"
+        android:background="@null"
+        android:src="@drawable/stop2"
+        tools:ignore="SpeakableTextPresentCheck"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/imgButtonNext"
+        android:layout_width="58dp"
+        android:layout_height="49dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="55dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/next"
+        tools:ignore="SpeakableTextPresentCheck"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/imgButtonPlay"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="135dp"
+        android:layout_marginBottom="46dp"
+        android:background="@null"
+        android:src="@drawable/play4"
+
+        tools:ignore="SpeakableTextPresentCheck"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/imgButtonPrev"
+        android:layout_width="58dp"
+        android:layout_height="49dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="74dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/prev"
+        tools:ignore="SpeakableTextPresentCheck"></ImageButton>
+
+    <SeekBar
+        android:id="@+id/seekbarProgress"
+        android:layout_above="@id/imgButtonPlay"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"></SeekBar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekbarProgress"
+        android:layout_margin="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="00:00"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:id="@+id/tvTotalTimePlayed"></TextView>
+    <TextView
+        android:id="@+id/tvtimeTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="00:00"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:layout_above="@+id/seekbarProgress">
+    </TextView>
+</RelativeLayout>
